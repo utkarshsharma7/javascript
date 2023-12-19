@@ -29,12 +29,16 @@ jsUser.email = "example@example.com"  //updating email in object
 jsUser.email = "exampleChange@example.com"
 
 // console.log(jsUser.email);
-
+ 
 jsUser.greeting = function(){
     console.log("Hello world");
 }
+jsUser.greeting2 = function(){
+    console.log(`Hello Js User ${this.name}`);
+}
 
-// console.log(jsUser.greeting);
+console.log(jsUser.greeting());
+console.log(jsUser.greeting2());
 // console.log(jsUser);
 
 

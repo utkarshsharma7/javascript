@@ -37,8 +37,27 @@ function loginUserMessage(username){
     return `${username} just logged in`
 }
 
-console.log(loginUserMessage("utkarsh")); 
+// console.log(loginUserMessage("utkarsh")); 
 
 
 
-console.log(loginUserMessage());  // when we dont give any argument in the function it just returns undefined 
+// console.log(loginUserMessage());  // when we dont give any argument in the function it just returns undefined 
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(20,400,600,200));
+
+const user = {
+    username: "utkarsh",
+    price: 199
+}
+
+function handleObject(anyObject){
+    console.log(
+      `Username is ${anyObject.username} and price is ${anyObject.price}`
+    );
+}
+handleObject(user)
+
